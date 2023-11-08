@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #ebe3d5;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.icon {
+	width: 20px;
+	height: auto;
+}
+
+#projectTitle {
+	text-align: center;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*   for computer   */
+@media (max-width: 2000px) {
+	.project > img {
+		height: auto;
+		width: 25vw;
+		border: 3px solid black;
+	}
+	#name {
+		width: 30vw;
+		display: flex;
+		flex-direction: column;
+		gap: 1vh;
+	}
+
+	#about {
+		width: 70vw;
+		display: flex;
+		flex-direction: column;
+		gap: 1vh;
+	}
+	#container {
+		display: flex;
+		flex-direction: column;
+		gap: 5vh;
+		padding: 2%;
+	}
+
+	#header {
+		display: flex;
+		text-align: center;
+	}
+	#projectContainer {
+		display: grid;
+		grid-template-columns: 25vw 25vw 25vw;
+		justify-content: center;
+		gap: 5vw;
+	}
+
+	.project {
+		transition-property: transform;
+		transition-duration: 1s;
+		transition-timing-function: ease-out;
+		transition-delay: 0.25s;
+	}
+	.project:hover {
+		transform: scale(1.1, 1.1);
+	}
+}
+
+/*     for tablet     */
+@media (max-width: 1000px) {
+	.project > img {
+		height: auto;
+		width: 40vw;
+		border: 3px solid black;
+	}
+	#name {
+		width: 30vw;
+		display: flex;
+		flex-direction: column;
+		gap: 1vh;
+	}
+
+	#about {
+		width: 70vw;
+		display: flex;
+		flex-direction: column;
+		gap: 1vh;
+	}
+	#container {
+		display: flex;
+		flex-direction: column;
+		gap: 5vh;
+		padding: 2%;
+	}
+
+	#header {
+		display: flex;
+		text-align: center;
+	}
+	#projectContainer {
+		display: grid;
+		grid-template-columns: 40vw 40vw;
+		justify-content: center;
+		gap: 5vw;
+	}
+}
+
+/*     for phone     */
+@media (max-width: 500px) {
+	.project > img {
+		height: auto;
+		width: 70vw;
+		border: 3px solid black;
+	}
+	#name {
+		width: 30vw;
+		display: flex;
+		flex-direction: column;
+		gap: 1vh;
+	}
+
+	#about {
+		width: 70vw;
+		display: flex;
+		flex-direction: column;
+		gap: 1vh;
+	}
+	#container {
+		display: flex;
+		flex-direction: column;
+		gap: 5vh;
+		padding: 2%;
+	}
+
+	#header {
+		display: flex;
+		text-align: center;
+	}
+	#projectContainer {
+		display: grid;
+		grid-template-columns: 70vw;
+		justify-content: center;
+		gap: 5vw;
+	}
+}
