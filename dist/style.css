@@ -124,14 +124,14 @@ body {
 		border: 3px solid black;
 	}
 	#name {
-		width: 30vw;
+		width: 100vw;
 		display: flex;
 		flex-direction: column;
 		gap: 1vh;
 	}
 
 	#about {
-		width: 70vw;
+		width: 100vw;
 		display: flex;
 		flex-direction: column;
 		gap: 1vh;
@@ -145,7 +145,9 @@ body {
 
 	#header {
 		display: flex;
+		flex-direction: column;
 		text-align: center;
+		justify-content: center;
 	}
 	#projectContainer {
 		display: grid;
